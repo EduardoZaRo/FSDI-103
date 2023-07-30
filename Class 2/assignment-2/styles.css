@@ -1,0 +1,72 @@
+body{
+    font-family:arial;
+}
+#title{
+    font-size:50px;
+}
+#receipts-container{
+    display:flex;
+    flex-direction:row-reverse;
+    gap:20px;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    background:whitesmoke;
+    padding:50px;
+}
+.hide{
+    display:none;
+}
+.receipt-content{
+    border-left:1px solid red;
+}
+.receipt{
+    width:250px;
+    height:450px;
+    background: #f5f5dc;
+    padding:50px;
+    transition:0.4s ease;
+}
+.receipt:hover{
+    background:#f5f5aa;
+    transition:0.4s ease;
+}
+.receipt:hover .final-price{
+    color:red;
+    font-size:20px;
+    transition:0.4s ease;
+}
+p{
+    padding-left:10px;
+}
+.receipt div{
+    border-bottom:1px solid rgba(0,0,255,0.5);
+
+} 
+.product-name,.final-price,h1,.search-bar,.subtotal{
+    transition:0.4s ease;
+    text-align:center;
+}
+.button-container{
+    display:flex;
+    justify-content:center;
+    
+}
+.button-container > button,.search-bar >  input{
+    min-height:80px;
+    border:none;
+    margin-bottom:30px;
+    font-size:40px;
+    background:lightgreen;
+    border-radius:10px;
+    width:80%;
+}
+.search-bar >  input{
+    background:lightblue;
+    font-size:20px;
+    text-align:center;
+}
+.date{
+    text-align:center;
+    font-size:14px;
+    color:green;
+}
