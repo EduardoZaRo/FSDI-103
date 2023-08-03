@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+<body>
+    <div class="input-container">
+        <input id="task" name="task" type="text" placeholder="Enter new task">
+        <button onclick="addTask()">+</button>
+    </div>
+
+    <p id="task-count">Total tasks saved: 0</p>
+    <div id="delete-btn-container" class="delete-btn-container">
+        <button class="delete-btn" id="delete-btn" onclick="deleteTasks()">Delete 0 selected tasks</button>
+    </div>
+    
+    <div class="todo-list" id="todo-list">Add a new task!</div>
+    <script src="./toDo.js"></script>
+</body>
+</html>
